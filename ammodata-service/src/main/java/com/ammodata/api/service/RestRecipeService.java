@@ -7,19 +7,19 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.ammodata.domain.Load;
-import com.ammodata.service.LoadService;
+import com.ammodata.domain.Recipe;
+import com.ammodata.service.RecipeService;
 
 
 @Controller
 @Transactional
-public class RestLoadService {
+public class RestRecipeService {
 	@Autowired
-	private LoadService loadService;
+	private RecipeService loadService;
 	
 	@RequestMapping(value="/load/{id}")
 	@ResponseBody
-	public Load getLoad(@PathVariable("id") Long id)
+	public Recipe getLoad(@PathVariable("id") Long id)
 	{
 		return loadService.getLoad(id);
 	}

@@ -1,21 +1,18 @@
 package com.ammodata.domain;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 import javax.persistence.Transient;
 
 @Entity
-@Table(name="Lod")
-public class Load {
+public class Recipe {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private Long loadId;
+	private Long recipeID;
 	@ManyToOne
 	@JoinColumn(name="caliber_id")
 	private Caliber caliber;
@@ -28,11 +25,11 @@ public class Load {
 	@Transient
 	private Primer primer;
 	
-	public Long getLoadId() {
-		return loadId;
+	public Long getRecipeID() {
+		return recipeID;
 	}
-	public void setLoadId(Long loadId) {
-		this.loadId = loadId;
+	public void setRecipeID(Long recipeID) {
+		this.recipeID = recipeID;
 	}
 	public Caliber getCaliber() {
 		return caliber;
