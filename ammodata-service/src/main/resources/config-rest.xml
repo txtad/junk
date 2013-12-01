@@ -14,7 +14,7 @@
         http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
 
 
-	<import resource="config-base.xml" />
+	<import resource="classpath:config-base.xml" />
 	
 	<!-- MVC Configs -->
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
