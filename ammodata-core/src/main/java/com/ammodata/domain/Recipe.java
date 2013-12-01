@@ -13,6 +13,7 @@ public class Recipe {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long recipeID;
+	private String name;
 	@ManyToOne
 	@JoinColumn(name="caliber_id")
 	private Caliber caliber;
@@ -30,6 +31,12 @@ public class Recipe {
 	}
 	public void setRecipeID(Long recipeID) {
 		this.recipeID = recipeID;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 	public Caliber getCaliber() {
 		return caliber;
