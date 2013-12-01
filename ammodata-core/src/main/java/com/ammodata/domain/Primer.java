@@ -19,5 +19,4 @@ public class Primer {
 	public void setManufacturer(String manufacturer) {
 		this.manufacturer = manufacturer;
 	}
-
 }
