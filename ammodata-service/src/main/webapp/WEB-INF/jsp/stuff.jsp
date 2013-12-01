@@ -2,8 +2,8 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <html>
 
-	<title>Hi!</title>
-	<body>Hi
+	<title>Recipes</title>
+	<body>
 	
 	<c:forEach items="${recipes}" var="recipe">
 		<p><c:out value="${recipe.recipeID}" /> - <c:out value="${recipe.name}" /></p>
@@ -16,5 +16,5 @@
 		<form:button value="submit" />
 	</form:form>
 	
-	!</body>
+	</body>
 </html>
