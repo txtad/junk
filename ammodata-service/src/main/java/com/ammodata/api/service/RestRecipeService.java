@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.ammodata.domain.Recipe;
 import com.ammodata.service.RecipeService;
 
-
 @Controller
 @Transactional
 public class RestRecipeService {
